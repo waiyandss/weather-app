@@ -9,6 +9,12 @@ const useFetchWeather = (latLon) => {
 
   useEffect(() => {
     (async () => {
+      if (!API_KEY) {
+        setError({ message: "API key not found" });
+        setLoading(false);
+        return;
+      }
+
       setError(null);
       setLoading(true);
 
