@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  place-items: center;
+  background: #84effc;
+  text-align: center;
+}
+
+.card {
+  margin: 8px;
+  max-width: 480px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.timezone {
+  color: gray;
+}
+
+.temp {
+  line-height: 20px;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  gap: 4px;
+}
+
+.column {
+  gap: 4px;
+}
+
+.border {
+  width: 0.5px;
+  background: gray;
+  height: 100%;
+}
+
+.column .label {
+  font-size: 14px;
+  color: gray;
+}
+
+.column .data {
+  font-weight: 600;
+}
+
+.weather-form {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.inputs input {
+  padding: 8px;
+  flex: 1;
+}
+
+.submit {
+  background: blue;
+  width: 100%;
+  border-radius: 4px;
+  color: white;
+  padding: 8px;
+}
+
+.error {
+  color: red;
+  text-align: left;
+  margin: 8px 0;
+  font-size: 12px;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 28px;
+}
+
+.cities {
+  width: 100%;
+}
+
+.cities div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
